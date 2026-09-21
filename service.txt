@@ -1,0 +1,46 @@
+package com.anandappa.springCRUD.demoSpringCRUD.service;
+import java.util.List;
+import org.springframework.stereotype.Service;
+import com.anandappa.springCRUD.demoSpringCRUD.model.Student;
+import com.anandappa.springCRUD.demoSpringCRUD.repository.StudentRepository;
+
+
+
+@Service
+public class StudentService 
+{
+
+	
+public StudentRepository studentRepository;
+
+
+	
+StudentService(StudentRepository studentRepository)
+	
+{
+		this.studentRepository=studentRepository;
+	
+}
+
+
+
+
+
+
+
+
+
+public Student saveStudent(Student student)
+{
+	return studentRepository.save(student);
+}
+
+
+
+public List<Student> getAllStudents()
+{
+	return studentRepository.findAll();
+}
+
+
+}

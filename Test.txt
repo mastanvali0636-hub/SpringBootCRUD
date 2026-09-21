@@ -1,0 +1,9 @@
+Write user stories and test cases for the folowing applications:
+
+1. IRCTC 20m
+
+2. Flipkart 20m
+
+3. Zomato  20m
+
+4. Hotel Booking  20m
